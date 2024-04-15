@@ -1,0 +1,31 @@
+github_token=XXXXXX
+github_username=moxneo
+github_repository=Neptune_4pro
+branch_name=main
+commit_username="moxneo"
+commit_email="moxneo@gmail.com"
+
+# Indivdual file syntax:
+#  Note: script.sh starts its search in $HOME which is /home/{username}/
+# Using below example the script will search for: /home/{username}/printer_data$
+
+path_printercfg=klipper_config/printer.cfg
+
+# Backup folder syntax:
+#  Note: script.sh starts its search in $HOME which is /home/{username}/
+# Using below example the script will search for: /home/{username}/printer_data$
+# `/*` should always be at the end of the path when backing up a folder so that$
+
+path_klipperdata=klipper_config/*
+
+# Array of strings in .gitignore pattern git format https://git-scm.com/docs/gi$
+# New additions must be enclosed in double quotes and should follow the pattern$
+exclude=( \
+"*.swp" \
+"*.tmp" \
+"printer-[0-9]*_[0-9]*.cfg" \
+"*.bak" \
+"*.bkp" \
+"*.csv" \
+"*.zip" \
+)
